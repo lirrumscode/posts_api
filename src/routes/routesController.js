@@ -1,5 +1,3 @@
-const { default: axios } = require("axios");
-
 const { router } = require("../controllers/homeController");
 const {
   get,

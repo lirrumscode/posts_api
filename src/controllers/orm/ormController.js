@@ -1,12 +1,12 @@
 require("dotenv").config();
 const { default: axios } = require("axios");
 
-
 /**
  * It makes a GET request to the API endpoint and returns the response
  * @param endpoint - The endpoint you want to hit.
  * @returns The response from the API call.
  */
+
 const get = async (endpoint) => {
   try {
     return await axios
@@ -29,6 +29,7 @@ const get = async (endpoint) => {
  * @param params - The parameters that will be passed to the endpoint.
  * @returns The response from the API call.
  */
+
 const getById = async (endpoint, params) => {
   try {
     return await axios
@@ -51,6 +52,7 @@ const getById = async (endpoint, params) => {
  * @param params - {
  * @returns The response from the API call.
  */
+
 const post = async (endpoint, params) => {
   try {
     return await axios
@@ -74,6 +76,7 @@ const post = async (endpoint, params) => {
  * @param params - the data you want to send to the server
  * @returns The response from the API.
  */
+
 const put = async (endpoint, id, params) => {
   try {
     return await axios
@@ -96,6 +99,7 @@ const put = async (endpoint, id, params) => {
  * @param id - The id of the item you want to delete.
  * @returns The response from the server.
  */
+
 const deleted = async (endpoint, id) => {
   try {
     return await axios
