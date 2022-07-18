@@ -10,7 +10,7 @@ const { default: axios } = require("axios");
 const get = async (endpoint) => {
   try {
     return await axios
-      .get(`${process.env.URL_URL_API}/${endpoint}`)
+      .get(`${process.env.URL_API}/${endpoint}`)
       .then((res) => {
         return res;
       })
